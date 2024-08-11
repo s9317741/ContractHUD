@@ -177,17 +177,14 @@ function ContractHUD:draw()
 							outputText = field_text .. " - " .. field_work .. " " .. ContractHUD:buildProgressBar(completion)
 						end
 					else -- other then supplyTransport contracts
-						if completion == 0 then -- when 0%, display fuit type title
-							if contract.type.name == "sow" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
-							elseif contract.type.name == "harvest" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
-							else
-								outputText = field_text .. " - " .. field_work
-							end
-						else -- else progress bar
-							outputText = field_text .. " " .. ContractHUD:buildProgressBar(completion)
+						if contract.type.name == "sow" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
+						elseif contract.type.name == "harvest" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
+						else
+							outputText = field_text .. " - " .. field_work
 						end
+						outputText = outputText .. " " .. ContractHUD:buildProgressBar(completion)
 					end
 				elseif ContractHUD.displayMode == 1 then
 					if contract.type.name == "supplyTransport" then
@@ -197,17 +194,14 @@ function ContractHUD:draw()
 							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:formatNumber(completion, false, true)
 						end
 					else -- other then supplyTransport contracts
-						if completion == 0 then -- when 0%, display fruit type title
-							if contract.type.name == "sow" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
-							elseif contract.type.name == "harvest" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
-							else
-								outputText = field_text .. " - " .. field_work
-							end
-						else -- else display percentage
-							outputText = field_text .. " - " .. ContractHUD:formatNumber(completion, false, true)
+						if contract.type.name == "sow" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
+						elseif contract.type.name == "harvest" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
+						else
+							outputText = field_text .. " - " .. field_work
 						end
+						outputText = outputText .. " - " .. ContractHUD:formatNumber(completion, false, true)
 					end
 				elseif ContractHUD.displayMode == 2 then
 					if contract.type.name == "supplyTransport" then
@@ -217,17 +211,14 @@ function ContractHUD:draw()
 							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
 						end
 					else -- other then supplyTransport contracts
-						if completion == 0 then -- when 0%, display fruit type title
-							if contract.type.name == "sow" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
-							elseif contract.type.name == "harvest" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
-							else
-								outputText = field_text .. " - " .. field_work
-							end
-						else -- else display percentage and bar
-							outputText = field_text .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
+						if contract.type.name == "sow" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
+						elseif contract.type.name == "harvest" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
+						else
+							outputText = field_text .. " - " .. field_work
 						end
+						outputText = outputText .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
 					end
 				elseif ContractHUD.displayMode == 3 then
 					if contract.type.name == "supplyTransport" then
@@ -237,17 +228,14 @@ function ContractHUD:draw()
 							outputText = field_work .. " (" .. ContractHUD:formatNumber(completion, false, true) .. ") => " .. contract.sellingStation.uiName
 						end
 					else -- other then supplyTransport contracts
-						if completion == 0 then -- when 0%, display fruit type title
-							if contract.type.name == "sow" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
-							elseif contract.type.name == "harvest" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
-							else
-								outputText = field_text .. " - " .. field_work
-							end
-						else -- else display percentage and bar
-							outputText = field_text .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
+						if contract.type.name == "sow" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
+						elseif contract.type.name == "harvest" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
+						else
+							outputText = field_text .. " - " .. field_work
 						end
+						outputText = outputText .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
 					end
 				elseif ContractHUD.displayMode == 4 then --contract.deliveredLiters
 					if contract.type.name == "supplyTransport" then
@@ -257,17 +245,14 @@ function ContractHUD:draw()
 							outputText = field_work .. " (" .. ContractHUD:formatNumber(completion, false, true) .. ") => " .. contract.sellingStation.uiName .. " (" .. ContractHUD:getRemainingTime(contract) .. ")"
 						end
 					else -- other then supplyTransport contracts
-						if completion == 0 then -- when 0%, display fruit type title
-							if contract.type.name == "sow" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
-							elseif contract.type.name == "harvest" then
-								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
-							else
-								outputText = field_text .. " - " .. field_work
-							end
-						else -- else display percentage and bar
-							outputText = field_text .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
+						if contract.type.name == "sow" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
+						elseif contract.type.name == "harvest" then
+							outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFillTypeTitle(contract.fillType)
+						else
+							outputText = field_text .. " - " .. field_work
 						end
+						outputText = outputText .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
 					end
 				elseif ContractHUD.displayMode == 5 then
 					if contract.type.name == "supplyTransport" then
@@ -285,7 +270,7 @@ function ContractHUD:draw()
 							outputText = field_text .. " - " .. field_work .. " (" .. g_currentMission.hud.l10n.texts.fieldJob_finished .. ")"
 						elseif contract.status == 2 and contract.success == false then
 							outputText = field_text .. " - " .. field_work .. " (" .. g_currentMission.hud.l10n.texts.fieldJob_failed .. ")"
-						elseif completion == 0 then -- when 0%, display fruit type title
+						else
 							if contract.type.name == "sow" then
 								outputText = field_text .. " - " .. field_work .. " - " .. ContractHUD:getFruitTypeName(contract.fruitType)
 							elseif contract.type.name == "harvest" then
@@ -293,8 +278,7 @@ function ContractHUD:draw()
 							else
 								outputText = field_text .. " - " .. field_work
 							end
-						else -- else display percentage and bar
-							outputText = field_text .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
+							outputText = outputText .. " - " .. ContractHUD:formatNumber(completion, false, true) .. " " .. ContractHUD:buildProgressBar(completion)
 						end
 					end
 				end
@@ -473,7 +457,9 @@ end
 function ContractHUD:getFruitTypeName(fruitTypeIndex)
 	if fruitTypeIndex ~= nil and type(fruitTypeIndex) == "number" then
 		local fruitTypeTable = g_fruitTypeManager:getFruitTypeByIndex(fruitTypeIndex)
-		return fruitTypeTable ~= nil and ContractHUD:firstToUpper(fruitTypeTable.name) or ""
+		local localizationKey = "fruitType_" .. ContractHUD:firstToUpper(fruitTypeTable.name)
+        return g_i18n:getText(localizationKey)
+		--return fruitTypeTable ~= nil and ContractHUD:firstToUpper(fruitTypeTable.name) or ""
 	end
 	return "NULL"
 end

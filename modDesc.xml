@@ -60,21 +60,77 @@ Version 1.2.0.7: (the.geremy)
 		<text name="input_CH_toggle_displaymode">
 			<de><![CDATA[Contract HUD umschalten]]></de>
 			<en><![CDATA[Contract HUD toggle]]></en>
-            <cz><![CDATA[Contract HUD režim]]></cz>
-            <ct><![CDATA[合約 HUD 切換]]></ct>
+      <cz><![CDATA[Contract HUD režim]]></cz>
+      <ct><![CDATA[合約 HUD 切換]]></ct>
 		</text>
-        <text name="CH_field">
-            <de><![CDATA[Feld]]></de>
-            <en><![CDATA[Field]]></en>
-            <cz><![CDATA[Pole]]></cz>
-            <ct><![CDATA[田地]]></ct>
-        </text>        
-        <text name="CH_supply">
-            <de><![CDATA[Lieferung]]></de>
-            <en><![CDATA[Supply]]></en>
-            <cz><![CDATA[Dodávka]]></cz>
-            <ct><![CDATA[供應]]></ct>
-        </text>
+    <text name="CH_field">
+        <de><![CDATA[Feld]]></de>
+        <en><![CDATA[Field]]></en>
+        <cz><![CDATA[Pole]]></cz>
+        <ct><![CDATA[田地]]></ct>
+    </text>        
+    <text name="CH_supply">
+        <de><![CDATA[Lieferung]]></de>
+        <en><![CDATA[Supply]]></en>
+        <cz><![CDATA[Dodávka]]></cz>
+        <ct><![CDATA[供應]]></ct>
+    </text>
+    <text name="fruitType_Wheat">
+      <en><![CDATA[Wheat]]></en>
+      <ct><![CDATA[小麥]]></ct>
+    </text>
+    <text name="fruitType_Barley">
+      <en><![CDATA[Barley]]></en>
+      <ct><![CDATA[大麥]]></ct>
+    </text>
+    <text name="fruitType_Oat">
+      <en><![CDATA[Oats]]></en>
+      <ct><![CDATA[燕麥]]></ct>
+    </text>
+    <text name="fruitType_Canola">
+      <en><![CDATA[Canola]]></en>
+      <ct><![CDATA[油菜籽]]></ct>
+    </text>
+    <text name="fruitType_Sorghum">
+      <en><![CDATA[Sorghum]]></en>
+      <ct><![CDATA[高粱]]></ct>
+    </text>
+    <text name="fruitType_Grape">
+      <en><![CDATA[Grapes]]></en>
+      <ct><![CDATA[葡萄]]></ct>
+    </text>
+    <text name="fruitType_Olive">
+      <en><![CDATA[Olives]]></en>
+      <ct><![CDATA[橄欖]]></ct>
+    </text>
+    <text name="fruitType_Sunflower">
+      <en><![CDATA[Sunflowers]]></en>
+      <ct><![CDATA[向日葵]]></ct>
+    </text>
+    <text name="fruitType_Soybean">
+      <en><![CDATA[Soybeans]]></en>
+      <ct><![CDATA[大豆]]></ct>
+    </text>
+    <text name="fruitType_Corn">
+      <en><![CDATA[Corn]]></en>
+      <ct><![CDATA[玉米]]></ct>
+    </text>
+    <text name="fruitType_Potato">
+      <en><![CDATA[Potatoes]]></en>
+      <ct><![CDATA[馬鈴薯]]></ct>
+    </text>
+    <text name="fruitType_Sugarcane">
+      <en><![CDATA[Sugarcane]]></en>
+      <ct><![CDATA[甘蔗]]></ct>
+    </text>
+    <text name="fruitType_Sugarbeet">
+      <en><![CDATA[Sugar Beets]]></en>
+      <ct><![CDATA[甜菜]]></ct>
+    </text>
+    <text name="fruitType_Cotton">
+      <en><![CDATA[Cotton]]></en>
+      <ct><![CDATA[棉花]]></ct>
+    </text>
 	</l10n>
 
 	<actions>
