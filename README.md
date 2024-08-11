@@ -19,6 +19,10 @@ If you want to change default display mode, open zip file and change line 60 in 
 - from:&emsp;ContractHUD.displayMode = 0
 - to:&emsp;&emsp;ContractHUD.displayMode = 3 -- mode number, in this example I want to have display mode 3 as default
 
+Version 1.3.0.0: (JackyYeh)
+- Added Traditional Chinese supported.
+- You now can see what the plant types in the sow tasks when the contract progress is none-zero.
+
 Version 1.2.1.0: (the.geremy)
 - corrected error when weather has two icons and overlay will not adjust
 - added alert time, when remaining mission time is below this value color of contract will change
